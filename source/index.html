@@ -7,25 +7,34 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="page__body">
-  <header>
-    <a>
-      <img src="img/logo-way.svg" width="44" height="18" alt="Логотип">
-    </a>
-    <ul>
-      <li>
-        <a>О путешествии</a>
-      </li>
-      <li>
-        <a>Цены</a>
-      </li>
-    </ul>
-    <button>
-      <svg width="24" height="24">
-        <use xlink:href="img/sprite.svg#line"></use>
-        <use xlink:href="img/sprite.svg#cross"></use>
-      </svg>
-    </button>
-    <a href="tel:+749978468446">+7 (499) -784-684-46</a>
+  <header class="header">
+    <div class="header__logo">
+      <a class="logo">
+        <img class="logo__image" src="img/logo-way.svg" width="44" height="18" alt="Логотип">
+      </a>
+    </div>
+    <div class="header__toggle">
+      <button class="toggle">
+        <svg width="24" height="24">
+          <use xlink:href="img/sprite.svg#line"></use>
+          <use xlink:href="img/sprite.svg#cross"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="header__menu">
+      <ul class="menu">
+        <li>
+          <a>О путешествии</a>
+        </li>
+        <li>
+          <a>Цены</a>
+        </li>
+      </ul>
+    </div>
+    <div class="header__contact">
+      <a href="tel:+749978468446">+7 (499) -784-684-46</a>
+    </div>
+
   </header>
 </body>
 </html>

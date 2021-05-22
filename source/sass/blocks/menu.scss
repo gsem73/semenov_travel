@@ -1,0 +1,14 @@
+.menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+
+  @media (max-width: $desktop-size - 1) {
+    flex-direction: column;
+  }
+
+  @media (min-width: $desktop-size) {
+    justify-content: flex-end;
+  }
+}

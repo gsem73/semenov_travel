@@ -1,0 +1,35 @@
+.header {
+  display: grid;
+
+
+  @media (max-width: $desktop-size - 1) {
+    grid-template-columns: 1fr auto;
+  }
+
+  @media (min-width: $desktop-size) {
+    grid-template-columns: auto 1fr auto;
+  }
+}
+
+.header__menu {
+  @media (max-width: $desktop-size - 1) {
+    grid-column: span 2;
+  }
+}
+
+
+.header__toggle {
+  @media (max-width: $desktop-size - 1) {
+    justify-self: end;
+  }
+
+  @media (min-width: $desktop-size) {
+    display: none;
+  }
+}
+
+.header__contact {
+  @media (max-width: $desktop-size - 1) {
+    display: none;
+  }
+}
