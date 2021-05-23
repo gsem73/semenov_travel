@@ -1,0 +1,29 @@
+.contact {
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 16px;
+  padding-right: 16px;
+  color: $base-extra-dark;
+
+  &:hover {
+    color: $base-accent;
+
+    .contact__icon {
+      stroke: $base-accent;
+    }
+  }
+}
+
+.contact__icon {
+  display: block;
+  stroke: $base-extra-dark;
+}
+
+.contact__text {
+  display: block;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+}

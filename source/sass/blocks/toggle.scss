@@ -1,4 +1,41 @@
 .toggle {
-  background-color: transparent;
   border: none;
+  display: flex;
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: $tablet-size - 1) {
+    width: 50px;
+    height: 50px;
+  }
+
+  @media (min-width: $tablet-size) and (max-width: $desktop-size - 1) {
+    width: 72px;
+    height: 50px;
+  }
+}
+
+.toggle--line {
+  background-color: $base-accent;
+
+  .toggle__icon-line {
+    display: block;
+  }
+
+  .toggle__icon-cross {
+    display: none;
+  }
+}
+
+.toggle--cross {
+  background-color: transparent;
+
+  .toggle__icon-line {
+    display: none;
+  }
+
+  .toggle__icon-cross {
+    display: block;
+  }
 }

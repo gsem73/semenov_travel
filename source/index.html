@@ -14,27 +14,37 @@
       </a>
     </div>
     <div class="header__toggle">
-      <button class="toggle">
+      <button class="toggle toggle--cross">
         <svg width="24" height="24">
-          <use xlink:href="img/sprite.svg#line"></use>
-          <use xlink:href="img/sprite.svg#cross"></use>
+          <use class="toggle__icon-line" xlink:href="img/sprite.svg#line"></use>
+          <use class="toggle__icon-cross" xlink:href="img/sprite.svg#cross"></use>
         </svg>
       </button>
     </div>
     <div class="header__menu">
       <ul class="menu">
-        <li>
-          <a>О путешествии</a>
+        <li class="menu__item">
+          <a class="menu__link">О путешествии</a>
+          <svg class="menu__icon" width="8" height="12">
+            <use xlink:href="img/sprite.svg#next"></use>
+          </svg>
         </li>
-        <li>
-          <a>Цены</a>
+        <li class="menu__item">
+          <a class="menu__link">Цены</a>
+          <svg class="menu__icon" width="8" height="12" >
+            <use xlink:href="img/sprite.svg#next"></use>
+          </svg>
         </li>
       </ul>
     </div>
     <div class="header__contact">
-      <a href="tel:+749978468446">+7 (499) -784-684-46</a>
+      <a class="contact" href="tel:+749978468446">
+        <svg class="contact__icon" width="17" height="24">
+          <use xlink:href="img/sprite.svg#phone"></use>
+        </svg>
+        <span class="contact__text">+7 (499) -784-684-46</span>
+      </a>
     </div>
-
   </header>
 </body>
 </html>
