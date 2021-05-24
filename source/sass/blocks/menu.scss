@@ -10,11 +10,39 @@
     gap: 30px;
     padding-top: 84px;
     padding-bottom: 84px;
+    background-color: white;
   }
 
   @media (min-width: $desktop-size) {
     justify-content: flex-end;
     gap: 40px;
+  }
+}
+
+.menu--show {
+  display: flex;
+}
+
+.menu--hide {
+  @media (max-width: $desktop-size - 1) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-size) {
+    display: flex;
+  }
+}
+
+.menu--overlay {
+  @media (max-width: $desktop-size - 1) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  @media (min-width: $desktop-size) {
+    position: static;
   }
 }
 

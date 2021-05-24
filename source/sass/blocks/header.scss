@@ -26,6 +26,7 @@
 .header__menu {
   @media (max-width: $desktop-size - 1) {
     grid-column: span 2;
+    position: relative;
   }
 
   @media (min-width: $desktop-size) {
