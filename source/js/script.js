@@ -17,6 +17,6 @@ const onToggleClick = function() {
   menu.classList.toggle('menu--show');
   menu.classList.toggle('menu--hide');
 
-}
+};
 
-toggle.addEventListener("click", onToggleClick);
+toggle.addEventListener('click', onToggleClick);
