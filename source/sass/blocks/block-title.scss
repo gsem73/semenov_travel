@@ -1,0 +1,18 @@
+.block-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
+  color: $base-extra-dark;
+
+  @media (max-width: $tablet-size - 1) {
+    text-align: center;
+  }
+
+  @media (min-width: $tablet-size) and (max-width: $desktop-size - 1) {
+    text-align: center;
+
+    &--slim {
+      text-align: left;
+    }
+  }
+}

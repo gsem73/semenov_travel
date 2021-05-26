@@ -1,0 +1,13 @@
+.comment {
+  font-size: 14px;
+  line-height: 170%;
+  color: $transparent-gray;
+
+  @media (max-width: $tablet-size - 1) {
+    text-align: center;
+  }
+
+  @media (min-width: $tablet-size) and (max-width: $desktop-size - 1) {
+    text-align: center;
+  }
+}

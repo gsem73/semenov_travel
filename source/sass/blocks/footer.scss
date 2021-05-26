@@ -1,0 +1,33 @@
+.footer {
+  display: grid;
+  gap: 30px;
+
+  @media (max-width: $tablet-size - 1) {
+    padding: 0 $mobile-padding;
+    grid-template-columns: 1fr;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  @media (min-width: $tablet-size) and (max-width: $desktop-size - 1) {
+    padding: 0 $tablet-padding;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  @media (min-width: $desktop-size) {
+    padding: 0 $desktop-padding;
+    max-width: 1170px + 2 * $desktop-padding;
+    margin: 0 auto;
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+}
+
+.footer__comment {
+  @media (min-width: $tablet-size) and (max-width: $desktop-size - 1) {
+    grid-column: span 2;
+  }
+}

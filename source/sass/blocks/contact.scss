@@ -1,7 +1,6 @@
 .contact {
   display: flex;
   gap: 16px;
-  justify-content: space-between;
   align-items: center;
   padding-left: 16px;
   padding-right: 16px;
@@ -9,16 +8,31 @@
 
   &:hover {
     color: $base-accent;
+  }
 
-    .contact__icon {
-      stroke: $base-accent;
-    }
+  &--accent {
+    color: $base-accent;
+  }
+
+  &--accent:hover {
+    color: $hover-accent;
+  }
+
+  @media (max-width: $tablet-size - 1) {
+    justify-content: center;
+  }
+
+  @media (min-width: $tablet-size) and (max-width: $desktop-size - 1) {
+    justify-content: flex-start;
+  }
+
+  @media (min-width: $desktop-size) {
+    justify-content: flex-start;
   }
 }
 
 .contact__icon {
   display: block;
-  stroke: $base-extra-dark;
 }
 
 .contact__text {

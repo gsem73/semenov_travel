@@ -1,0 +1,19 @@
+.flex-layout {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.flex-layout__item {
+  @media (max-width: $tablet-size - 1) {
+    width: calc(100% / 2);
+  }
+
+  @media (min-width: $tablet-size) and (max-width: $desktop-size - 1) {
+    width: calc(100% / 3);
+  }
+
+  @media (min-width: $desktop-size) {
+    width: calc(100% / 3);
+  }
+}
